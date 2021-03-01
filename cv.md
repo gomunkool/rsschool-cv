@@ -1,7 +1,7 @@
 #Resume:
 Vadzim Maroz
 
-#Сontacts
+#Сontacts:
 Telephone: +375 29 286 88 37
 I-mail: pivzz19881988@gmail.com
 I-mail: pivzz1988@mail.ru
