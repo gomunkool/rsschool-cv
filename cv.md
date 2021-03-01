@@ -4,6 +4,7 @@ Vadzim Maroz
 #Сontacts
 Telephone: +375 29 286 88 37
 I-mail: pivzz19881988@gmail.com
+I-mail: pivzz1988@mail.ru
 
 #Brief information about yourself:
 For more than 10 years I have been working in a factory in production automation.
