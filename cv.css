@@ -1,0 +1,33 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  margin: 0px;
+}
+
+#foto {
+  float: right;
+  margin: 0px 0px 0px 30px;
+}
+#name {
+  text-align: center;
+}
+#contact {
+  width: 200px;
+  float: left;
+  margin: 0px 10px 70px 10px;
+}
+#person {
+  width: 200px;
+  float: right;
+  margin: 0px 40px 00px 10px;
+}
+#information {
+  clear: left;
+  margin: 0px 50px 0px 10px;
+}
+.title {
+  font-size: 14px;
+}
+.info {
+  font-size: 16px;
+}
