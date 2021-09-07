@@ -1,63 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>HTML5</title>
-
-    <link type="text/css" rel="stylesheet" href="cv.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="style.css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV</title>
   </head>
-
   <body>
-    <div id="name"><h1>Vadzim Maroz</h1></div>
-    <div id="foto">
-      <img src="mi.jpg" alt="it's me" />
-    </div>
-    <div id="contact">
-      <p class="title">Contacts Telephone:</p>
-      <p class="info">+375 29 286 88 37</p>
-      <p class="title">I-mail:</p>
-      <p class="info">pivzz19881988@gmail.com</p>
-    </div>
-
-    <div id="person">
-      <p class="title">Personnal detales Born:</p>
-      <p class="info">26 may 1988</p>
-      <p class="title">Native language:</p>
-      <p class="info">Russian</p>
-      <p class="title">Nationality:</p>
-      <p class="info">Belarusian</p>
-    </div>
-
-    <div id="information">
-      <p class="title">Brief information about yourself:</p>
-      <p class="info">
-        For more than 10 years I have been working in a factory in production
-        automation. Always was fond of mathematical and exact sciences, work
-        with a computer. I can use Adobe Illustrator well. I do vector graphics.
-        I learned this on my own. I have a verified account for Shutterstock.
-        Completed in 2 months books on HTML and CSS, JS (Head First HTML with
-        CSS & XHTML, Head First JavaScript). Have an account on codewars
-        <a href="https://www.codewars.com/users/gomunkool" title="codewars"
-          >https://www.codewars.com/users/gomunkool</a
-        >
-        where I solve tasks.
-      </p>
-      <p class="title">Skills:</p>
-      <p class="info">Beginner HTML, CSS, JS.</p>
-      <p class="title">Code examples:</p>
-      <p class="info">
-        My GitHub walkthrough and tasks solving account is
-        <a href="https://github.com/gomunkool" title="GitHub"
-          >https://github.com/gomunkool</a
-        >
-      </p>
-      <p class="title">Education:</p>
-      <p class="info">Secondary Specialized.</p>
-      <p class="title">Level of English:</p>
-      <p class="info">
-        Pre-Intermediate. I have been studying for almost 2 years with a
-        coacher.
-      </p>
+    <div class="coutener">
+      <header>
+        <div class="foto"></div>
+        <div class="name__title">Vadim Moroz</div>
+      </header>
+      <section class="info">
+        <div class="personal__count count">
+          <div class="address title">
+            Address:
+            <div class="text">Belarus Grodno</div>
+          </div>
+          <div class="number title">
+            Phone number:
+            <div class="text">+375 29 286 88 37</div>
+          </div>
+          <div class="status title">
+            Marital status:
+            <div class="text">Married</div>
+          </div>
+          <div class="birth title">
+            Date of birth:
+            <div class="text">05.26.1988</div>
+          </div>
+          <div class="Email title">
+            Email:
+            <div class="text">pivzz19881988@gmail.com</div>
+          </div>
+        </div>
+        <div class="education__count count">
+          <div class="education title">
+            Education:
+            <div class="text">
+              College of Technology <br />
+              "Grodnensky State University named after Y. Kupala"<br />
+              technological-process automation <br />2005-2009
+            </div>
+          </div>
+        </div>
+        <div class="work__count count">
+          <div class="work title">
+            Work experience:
+            <div class="text">
+              2009 <br />
+              "Grodno AZOT"<br />
+              engineer control and testing instrumentation
+            </div>
+          </div>
+        </div>
+        <div class="qualities__count count">
+          <div class="qualities title">
+            Personal qualities:
+            <div class="text">
+              sociable <br />purposeful <br />responsible <br />punctual
+              <br />stress resistant <br />versatile <br />dependable <br />have
+              a good sense of humor
+            </div>
+          </div>
+        </div>
+        <div class="skills__count count">
+          <div class="skills title">
+            Skills:
+            <div class="text">
+              HTML <br />
+              CSS <br />
+              Java Script <br />
+              <div class="profils">
+                My profiles: <a href="https://github.com/gomunkool">GitHub</a>
+                <a href="https://www.codewars.com/users/gomunkool">CodeWars</a>
+              </div>
+            </div>
+          </div>
+          <div class="language title">
+            Languages:
+            <div class="text">
+              Russian - Native <br />English - A2 <br />continue studying
+              English with the tutor
+            </div>
+          </div>
+          <div class="hobbies title">
+            Hobbies:
+            <div class="text">
+              Table tennis <br />Drone piloting <br />Vector graphics, have an
+              account on ShutterStock
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
