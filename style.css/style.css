@@ -122,3 +122,12 @@ body {
   width: 100px;
   display: block;
 }
+.git-text {
+  color: black;
+}
+.git-text:hover {
+  color: red;
+}
+.git-text:visited {
+  text-decoration: none;
+}
