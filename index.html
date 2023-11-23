@@ -16,31 +16,32 @@
   <body>
     <div class="coutener">
       <header>
-        <div class="foto"></div>
-        <div class="name__title">Vadim Moroz</div>
+          <img  class="foto" src="image/VadimCV.jpg" alt="Vadim Moroz">
+        <h1 class="name__title">Vadim Moroz</h1>
+        <nav></nav>
       </header>
       <section class="info">
         <div class="personal__count count">
-          <div class="address title">
+          <h2 class="address title">
             Address:
-            <div class="text">Belarus Grodno</div>
-          </div>
-          <div class="number title">
+          </h2>
+          <div class="text">Belarus Grodno</div>
+          <h2 class="number title">
             Phone number:
-            <div class="text">+375 29 286 88 37</div>
-          </div>
-          <div class="status title">
+          </h2>
+          <div class="text">+375 29 286 88 37</div>
+          <h2 class="status title">
             Marital status:
-            <div class="text">Married</div>
-          </div>
-          <div class="birth title">
+          </h2>
+          <div class="text">Married</div>
+          <h2 class="birth title">
             Date of birth:
-            <div class="text">05.26.1988</div>
-          </div>
-          <div class="Email title">
+          </h2>
+          <div class="text">05.26.1988</div>
+          <h2 class="Email title">
             Email:
-            <div class="text">pivzz19881988@gmail.com</div>
-          </div>
+          </h2>
+          <div class="text">pivzz19881988@gmail.com</div>
         </div>
         <div class="education__count count">
           <div class="education title">
@@ -66,9 +67,14 @@
           <div class="qualities title">
             Personal qualities:
             <div class="text">
-              sociable <br>purposeful <br>responsible <br>punctual
-              <br>stress resistant <br>versatile <br>dependable <br>have
-              a good sense of humor
+              <ul>
+                <li>sociable</li>
+                <li>purposeful</li>
+                <li>responsible</li>
+                <li>stress resistant</li>
+                <li>versatile</li>
+                <li>punctual</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -86,9 +92,51 @@
             </div>
           </div>
           <div class="language title">
+            Sample code:
+            <div class="text">
+              function Car(make, model, year, color, passengers, convertible, mileage) {
+              <br>
+              this.make = make<br>
+              this.model = model<br>
+              this.year = year<br>
+              this.color = color<br>
+              this.passengers = passengers<br>
+              this.convertible = convertible<br>
+              this.mileage = mileage<br>
+              this.started = false<br>
+              this.start = () => {<br>
+              this.started = true
+              }
+              <br>
+              this.stop = () => {<br>
+              this.started = false<br>
+              }<br>
+              this.drive = () => {<br>
+              if (this.started) {<br>
+              console.log(this.make + ' ' + this.model + ' goes zoom zoom!')<br>
+              } else {<br>
+              console.log('Start the engine first.')<br>
+              }<br>
+              }<br>
+              }<br>
+
+              var chevy = new Car('Chevy', 'Bel Air', 1957, 'red', 2, false, 1021)<br>
+              var cadi = new Car('GM', 'Cadillac', 1955, 'tan', 5, false, 12892)<br>
+              var taxi = new Car('Webville Motors', 'Taxi', 1955, 'yellow', 4, false, 281341)<br>
+              var fiat = new Car('Fiat', '500', 1957, 'Medium Blue', 2, false, 88000)<br>
+              var fiat = new Car('Fiat', '500', 1957, 'Medium Blue', 2, false, 88000)<br>
+            </div>
+          </div>
+          <div class="language title">
+            Portfolio:
+            <div class="text">
+             <a href="https://fantastic-basbousa-fd4fcc.netlify.app/">Link</a>
+            </div>
+          </div>
+          <div class="language title">
             Languages:
             <div class="text">
-              Russian - Native <br>English - A2 <br>continue studying
+              Russian - Native <br>English - B1 <br>continue studying
               English with the tutor
             </div>
           </div>
@@ -102,12 +150,15 @@
         </div>
       </section>
       <footer>
-        <div class="fotter__count">
+        <nav class="fotter__count">
           <div class="logo">
             <a class="logo__link" href="https://rs.school/js/">logo</a>
           </div>
-          <div class="year">2022</div>
-        </div>
+          <div class="logo">
+            <a class="year" href="https://github.com/gomunkool">GitHub</a>
+          </div>
+          <div class="year">23.11.2023</div>
+        </nav>
       </footer>
     </div>
   </body>

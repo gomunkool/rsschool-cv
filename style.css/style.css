@@ -28,7 +28,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
@@ -68,14 +67,13 @@ body {
 }
 .coutener {
   width: 700px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 .foto {
-  height: 160px;
+  height: 220px;
   width: 160px;
-  background: url(../image/VadimCV.jpg) no-repeat top;
-  border-radius: 50%;
   margin: 0 auto;
+  display: block;
 }
 .name__title {
   font-size: 36px;
@@ -121,4 +119,7 @@ body {
   height: 100px;
   width: 100px;
   display: block;
+}
+li {
+  list-style-type: none;
 }
