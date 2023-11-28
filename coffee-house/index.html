@@ -5,21 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap"
+          rel="stylesheet">
     <title>Coffee House</title>
 </head>
 <body>
-<div class="countener">
+<div class="count">
     <header>
-        <div></div>
+        <div class="header-count">
+            <div class="logo-count">
+                <img class="logo" src="images/logo.svg" alt="logo">
+            </div>
+            <div class="nav-count">
+                <nav>
+                    <ul class="header-nav">
+                        <li>Favorite coffee</li>
+                        <li>About</li>
+                        <li>Mobile app</li>
+                        <li>Contact us</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-menu">
+                <div>Menu</div>
+                <img src="images/coffee-cup.svg" alt="cup">
+            </div>
+        </div>
     </header>
-    <section>
-    </section>
+    <main>
+        <section class="menu">
+            <div class="menu-count">
+                <div class="menu-info">
+                    <div class="menu-info__title">
+                        <span class="menu-info__title_first">Enjoy</span>
+                        <span class="menu-info__title_other">premium coffee at our charming cafe</span>
+                    </div>
+                    <div class="menu-info__description">With its inviting atmosphere and delicious coffee options, the
+                        Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and
+                        inviting space to enjoy their favorite beverage.
+                    </div>
+                    <button class="menu-info__button">Menu</button>
+                </div>
+            </div>
+        </section>
+        <section class="choose">
+            <div class="choose-title">
+                <span>Choose your</span>
+                <span class="choose-title_italic">favorite</span>
+                <span>coffee</span>
+            </div>
+            <div class="choose-slider">
+                <div class="slider-button slider-button__left">
+                    <img src="images/arrow-left.svg" alt="left">
+                </div>
+                <div class="slider">
+                    <div class="slider__img">
+                        <img src="images/coffee-slider-1.png" alt="coffee">
+                    </div>
+                    <div class="slider__title">S’mores Frappuccino</div>
+                    <div class="slider__info">This new drink takes an espresso and mixes it with brown sugar and
+                        cinnamon before being topped with oat milk.
+                    </div>
+                    <div class="slider__prise">$5.50</div>
+                    <div class="slide-bar-count">
+                        <div class="slide-bar-count__item slide-bar-count__item_active"></div>
+                        <div class="slide-bar-count__item"></div>
+                        <div class="slide-bar-count__item"></div>
+                    </div>
+                </div>
+                <div class="slider-button slider-button__right">
+                    <img src="images/arrow-right.svg" alt="right">
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
     </footer>
 </div>
