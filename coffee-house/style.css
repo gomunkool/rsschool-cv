@@ -208,35 +208,91 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
 }
-.slider__title{
+
+.slider__title {
     font-size: 24px;
     line-height: 30px;
     margin: 15px 0 0 0;
 }
-.slider__info{
+
+.slider__info {
     width: 480px;
     text-align: center;
     font-weight: 400;
     line-height: 24px;
     margin: 15px 0;
 }
-.slider__prise{
+
+.slider__prise {
     font-size: 24px;
     line-height: 30px;
 }
-.slide-bar-count{
+
+.slide-bar-count {
     margin: 40px 0 0 0;
     width: 144px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.slide-bar-count__item{
+
+.slide-bar-count__item {
     width: 40px;
     height: 4px;
     background-color: #C1B6AD;
     border-radius: 100px;
 }
-.slide-bar-count__item_active{
+
+.slide-bar-count__item_active {
     background-color: #665F55;
+}
+
+.photos-section {
+    padding-top: 40px;
+}
+
+.photos-title {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.photos-title_italic {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.photos-count {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+}
+
+.photo {
+    width: 660px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.photos-left_top {
+    height: 590px;
+    background: url("images/about-1.png") 50% no-repeat;
+}
+
+.photos-left_bottom {
+    height: 430px;
+    background: url("images/about-2.png") 50% no-repeat;
+
+}
+
+.photos-right_top {
+    height: 430px;
+    background: url("images/about-3.png") 50% no-repeat;
+
+}
+
+.photos-right_bottom {
+    height: 590px;
+    background: url("images/about-4.png") 50% no-repeat;
+
 }
