@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f520bcbb-afd7-49bc-95d7-ee218cad1ccc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee-house/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee-house/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/style.css" afterDir="false" />
     </list>
@@ -22,15 +23,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/rsschool-cv/coffee-house/images",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/rsschool-cv/coffee-house/images&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\rsschool-cv\coffee-house\images" />
@@ -46,6 +47,7 @@
       <updated>1700765707861</updated>
       <workItem from="1700765709395" duration="3475000" />
       <workItem from="1701114770753" duration="1062000" />
+      <workItem from="1701293449336" duration="4044000" />
     </task>
     <servers />
   </component>

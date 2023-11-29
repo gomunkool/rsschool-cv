@@ -282,17 +282,155 @@ h6 {
 .photos-left_bottom {
     height: 430px;
     background: url("images/about-2.png") 50% no-repeat;
-
 }
 
 .photos-right_top {
     height: 430px;
     background: url("images/about-3.png") 50% no-repeat;
-
 }
 
 .photos-right_bottom {
     height: 590px;
     background: url("images/about-4.png") 50% no-repeat;
+}
 
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 60px 0;
+}
+
+.download-info {
+    width: 630px;
+    height: 342px;
+}
+
+.download-title {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 600;
+}
+
+.download-title_italic {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.download-description {
+    font-weight: 400;
+    line-height: 24px;
+    padding: 40px 0;
+}
+
+.download-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.download-button {
+    width: 200px;
+    height: 64px;
+    border: #665F55 1px solid;
+    border-radius: 100px;
+    margin: 0 20px 0 0;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.download-button-info {
+    margin: 0 0 0 10px
+}
+
+.download-button-info__text {
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.footer {
+    width: 1360px;
+    height: 450px;
+    border-radius: 40px;
+    padding: 100px;
+    background-color: #665F55;
+    display: flex;
+    align-items: center;
+}
+
+.footer-left {
+    width: 530px;
+    height: 150px;
+    margin: 0 100px 0 0;
+}
+
+.footer-title {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 600;
+    color: #E1D4C9;
+}
+
+.footer-title_italic {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.footer-apps {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+
+.footer-apps__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: #C1B6AD 1px solid;
+    margin: 0 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    color: #E1D4C9;
+}
+
+.contacts-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 40px 0;
+}
+.contacts-info{
+    margin: 0 0 20px 0;
+}
+.contacts-icon {
+    margin: 0 5px 0 0
+}
+.contacts-icon__clock{
+    width: 17px;
+    height: 17px;
+    border-radius: 100px;
+    border: #E1D4C9 1px solid;
+    display: inline-block;
+    position: relative;
+}
+.contacts-icon__clock_min{
+    width: 2px;
+    height: 8px;
+    background-color: #E1D4C9;
+    border-radius: 100px;
+    position: absolute;
+    top: 1px;
+    left: 7px;
+}
+.contacts-icon__clock_hour{
+    width: 8px;
+    height: 2px;
+    background-color: #E1D4C9;
+    border-radius: 100px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
 }
