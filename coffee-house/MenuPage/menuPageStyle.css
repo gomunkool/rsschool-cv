@@ -131,227 +131,101 @@ h6 {
     width: 72px;
 }
 
-.menu-count {
-    background: url('images/img-hero.png') 50% no-repeat;
-    height: 644px;
-    margin: 20px 0;
-    border-radius: 40px;
-    position: relative;
+.header-menu-link {
+    border-bottom: #403F3D 2px solid;
+    width: 72px;
+    height: 28px;
 }
 
-.menu-info {
-    width: 530px;
-    height: 444px;
-    position: absolute;
-    left: 100px;
-    top: 85px;
-}
-
-.menu-info__title {
-    font-size: 72px;
-}
-
-.menu-info__title_first {
-    color: #B0907A;
-    font-style: italic;
-}
-
-.menu-info__title_other {
-    color: #E1D4C9
-}
-
-.menu-info__description {
-    color: #E1D4C9;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 50px 0;
-}
-
-.menu-info__button {
-    width: 200px;
-    height: 65px;
-    border-radius: 100px;
-    background-color: #E1D4C9;
-    font-size: 16px;
-}
-
-.choose {
-    margin: 100px 0;
-}
-
-.choose-title {
+.menu-title {
     text-align: center;
     font-size: 60px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
 }
 
-.choose-title_italic {
+.menu-title_italic {
     color: #B0907A;
     font-style: italic;
 }
 
-.choose-slider {
+.menu-buttons-count {
+    width: 361px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 40px 0 0 0;
+    margin: 0 auto;
 }
 
-.slider-button {
-    width: 60px;
-    height: 60px;
+.menu-button {
+    height: 46px;
+    border: #C1B6AD 1px solid;
     border-radius: 100px;
-    border: #665F55 1px solid;
+    padding: 8px 16px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #403F3D;
+}
+
+.menu-button__image {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.slider {
-    width: 1152px;
-    height: 640px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.slider__title {
-    font-size: 24px;
-    line-height: 30px;
-    margin: 15px 0 0 0;
-}
-
-.slider__info {
-    width: 480px;
-    text-align: center;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 15px 0;
-}
-
-.slider__prise {
-    font-size: 24px;
-    line-height: 30px;
-}
-
-.slide-bar-count {
-    margin: 40px 0 0 0;
-    width: 144px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.slide-bar-count__item {
-    width: 40px;
-    height: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
     background-color: #C1B6AD;
-    border-radius: 100px;
+    margin: 0 5px 0 0;
 }
 
-.slide-bar-count__item_active {
-    background-color: #665F55;
-}
-
-.photos-section {
-    padding-top: 40px;
-}
-
-.photos-title {
-    font-size: 60px;
-    line-height: 75px;
-    font-weight: 600;
-}
-
-.photos-title_italic {
-    color: #B0907A;
-    font-style: italic;
-}
-
-.photos-count {
+.menu-products-count {
+    width: 1360px;
+    margin: 40px 0 80px 0;
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
-    margin: 40px 0 0 0;
 }
 
-.photo {
-    width: 660px;
-    border-radius: 20px;
-    margin-bottom: 40px;
+.product {
+    width: 310px;
+    height: 506px;
+    border: #C1B6AD 1px solid;
+    border-radius: 40px;
+    margin: 0 0 40px 0;
 }
 
-.photos-left_top {
-    height: 590px;
-    background: url("images/about-1.png") 50% no-repeat;
+.product__image {
+    width: 100%;
+    border-radius: 40px;
 }
 
-.photos-left_bottom {
-    height: 430px;
-    background: url("images/about-2.png") 50% no-repeat;
-}
-
-.photos-right_top {
-    height: 430px;
-    background: url("images/about-3.png") 50% no-repeat;
-}
-
-.photos-right_bottom {
-    height: 590px;
-    background: url("images/about-4.png") 50% no-repeat;
-}
-
-.download-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 60px 0;
-}
-
-.download-info {
-    width: 630px;
-    height: 342px;
-}
-
-.download-title {
-    font-size: 60px;
-    line-height: 75px;
+.product__title {
     font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #403F3D;
+    margin: 20px;
 }
 
-.download-title_italic {
-    color: #B0907A;
-    font-style: italic;
-}
-
-.download-description {
+.product__description {
     font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
-    padding: 40px 0;
+    color: #403F3D;
+    margin: 0 20px 10px 20px;
 }
 
-.download-buttons {
-    display: flex;
-    align-items: center;
-}
-
-.download-button {
-    width: 200px;
-    height: 64px;
-    border: #665F55 1px solid;
-    border-radius: 100px;
-    margin: 0 20px 0 0;
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.download-button-info {
-    margin: 0 0 0 10px
-}
-
-.download-button-info__text {
-    font-size: 10px;
-    line-height: 14px;
+.product__prise {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #403F3D;
+    margin: 0 20px 10px 20px;
 }
 
 .footer {
