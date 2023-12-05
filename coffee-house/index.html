@@ -14,16 +14,18 @@
 <div class="count">
     <header>
         <div class="header-count">
-            <div class="logo-count">
-                <img class="logo" src="images/logo.svg" alt="logo">
-            </div>
+            <a href="index.html">
+                <div class="logo-count">
+                    <img class="logo" src="images/logo.svg" alt="logo">
+                </div>
+            </a>
             <div class="nav-count">
                 <nav>
                     <ul class="header-nav">
-                        <li>Favorite coffee</li>
-                        <li>About</li>
-                        <li>Mobile app</li>
-                        <li>Contact us</li>
+                        <li><a href="#favorite">Favorite coffee</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#mobile">Mobile app</a></li>
+                        <li><a href="#contact">Contact us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,28 +39,31 @@
         </div>
     </header>
     <main>
-        <section class="menu">
-            <div class="menu-count">
-                <div class="menu-info">
-                    <div class="menu-info__title">
-                        <span class="menu-info__title_first">Enjoy</span>
-                        <span class="menu-info__title_other">premium coffee at our charming cafe</span>
+        <section class="enjoy">
+            <div class="enjoy-count">
+                <div class="enjoy-info">
+                    <div class="enjoy-info__title">
+                        <span class="enjoy-info__title_first">Enjoy</span>
+                        <span class="enjoy-info__title_other">premium coffee at our charming cafe</span>
                     </div>
-                    <div class="menu-info__description">With its inviting atmosphere and delicious coffee options, the
+                    <div class="enjoy-info__description">With its inviting atmosphere and delicious coffee options, the
                         Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and
                         inviting space to enjoy their favorite beverage.
                     </div>
-                    <button class="menu-info__button">Menu</button>
+                    <a href="MenuPage/menuPage.html">
+                        <button class="enjoy-info__button">Menu</button>
+                    </a>
+
                 </div>
             </div>
         </section>
-        <section class="choose">
-            <div class="choose-title">
+        <section id="favorite" class="favourite">
+            <div class="favourite-title">
                 <span>Choose your</span>
-                <span class="choose-title_italic">favorite</span>
+                <span class="favourite-title_italic">favorite</span>
                 <span>coffee</span>
             </div>
-            <div class="choose-slider">
+            <div class="favourite-slider">
                 <div class="slider-button slider-button__left">
                     <img src="images/arrow-left.svg" alt="left">
                 </div>
@@ -82,49 +87,49 @@
                 </div>
             </div>
         </section>
-        <section class="photos-section">
-            <div class="photos-title">
+        <section id="about" class="about-section">
+            <div class="about-title">
                 <span>Resource is</span>
-                <span class="photos-title_italic">the perfect and cozy place</span>
+                <span class="about-title_italic">the perfect and cozy place</span>
                 <span>where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</span>
             </div>
-            <div class="photos-count">
-                <div class="photos-left">
-                    <div class="photo photos-left_top"></div>
-                    <div class="photo photos-left_bottom"></div>
+            <div class="about-count">
+                <div class="about-left">
+                    <div class="photo about-left_top"></div>
+                    <div class="photo about-left_bottom"></div>
                 </div>
-                <div class="photos-right">
-                    <div class="photo photos-right_top"></div>
-                    <div class="photo photos-right_bottom"></div>
+                <div class="about-right">
+                    <div class="photo about-right_top"></div>
+                    <div class="photo about-right_bottom"></div>
                 </div>
             </div>
         </section>
-        <section class="download-section">
-            <div class="download-info">
-                <div class="download-title">
-                    <span class="download-title_italic">Download</span>
+        <section id="mobile" class="mobile-section">
+            <div class="mobile-info">
+                <div class="mobile-title">
+                    <span class="mobile-title_italic">Download</span>
                     <span>our apps to start ordering</span>
                 </div>
-                <div class="download-description">Download the Resource app today and experience the comfort of ordering
+                <div class="mobile-description">Download the Resource app today and experience the comfort of ordering
                     your favorite coffee from wherever you are
                 </div>
-                <div class="download-buttons">
-                    <div class="download-button">
-                        <div class="download-button__logo">
+                <div class="mobile-buttons">
+                    <div class="mobile-button">
+                        <div class="mobile-button__logo">
                             <img src="images/apple.svg" alt="apple">
                         </div>
-                        <div class="download-button-info">
-                            <div class="download-button-info__text">Available on the</div>
-                            <div class="download-button-info__title">App Store</div>
+                        <div class="mobile-button-info">
+                            <div class="mobile-button-info__text">Available on the</div>
+                            <div class="mobile-button-info__title">App Store</div>
                         </div>
                     </div>
-                    <div class="download-button">
-                        <div class="download-button__logo">
+                    <div class="mobile-button">
+                        <div class="mobile-button__logo">
                             <img src="images/google.svg" alt="google">
                         </div>
-                        <div class="download-button-info">
-                            <div class="download-button-info__text">Available on</div>
-                            <div class="download-button-info__title">Google Play</div>
+                        <div class="mobile-button-info">
+                            <div class="mobile-button-info__text">Available on</div>
+                            <div class="mobile-button-info__title">Google Play</div>
                         </div>
                     </div>
                 </div>
@@ -134,7 +139,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer-left">
             <div class="footer-title">
                 <span>Sip, Savor, Smile. </span>

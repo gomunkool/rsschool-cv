@@ -170,7 +170,20 @@ h6 {
     line-height: 24px;
     font-weight: 600;
     color: #403F3D;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.menu-button:hover {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.menu-button_active {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
 
 .menu-button__image {
     display: flex;
@@ -187,7 +200,7 @@ h6 {
     width: 1360px;
     margin: 40px 0 80px 0;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 

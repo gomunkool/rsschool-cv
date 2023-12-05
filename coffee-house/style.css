@@ -41,6 +41,7 @@ body {
     font-weight: 600;
     color: #403F3D;
     background-color: #E1D4C9;
+    scroll-behavior: smooth;
 }
 
 input,
@@ -65,6 +66,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
     text-decoration: none;
+    color: #403F3D;
 }
 
 a:hover {
@@ -93,7 +95,7 @@ h6 {
 .count {
     padding: 20px 40px 40px 40px;
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
 }
 
 .header-count {
@@ -122,6 +124,11 @@ h6 {
 
 .header-menu-link {
     color: #403F3D;
+    height: 28px;
+}
+
+.header-menu-link:hover {
+    border-bottom: #403F3D 2px solid;
 }
 
 .header-menu {
@@ -131,7 +138,7 @@ h6 {
     width: 72px;
 }
 
-.menu-count {
+.enjoy-count {
     background: url('images/img-hero.png') 50% no-repeat;
     height: 644px;
     margin: 20px 0;
@@ -139,7 +146,7 @@ h6 {
     position: relative;
 }
 
-.menu-info {
+.enjoy-info {
     width: 530px;
     height: 444px;
     position: absolute;
@@ -147,27 +154,27 @@ h6 {
     top: 85px;
 }
 
-.menu-info__title {
+.enjoy-info__title {
     font-size: 72px;
 }
 
-.menu-info__title_first {
+.enjoy-info__title_first {
     color: #B0907A;
     font-style: italic;
 }
 
-.menu-info__title_other {
+.enjoy-info__title_other {
     color: #E1D4C9
 }
 
-.menu-info__description {
+.enjoy-info__description {
     color: #E1D4C9;
     font-weight: 400;
     line-height: 24px;
     padding: 50px 0;
 }
 
-.menu-info__button {
+.enjoy-info__button {
     width: 200px;
     height: 65px;
     border-radius: 100px;
@@ -175,21 +182,21 @@ h6 {
     font-size: 16px;
 }
 
-.choose {
+.favourite {
     margin: 100px 0;
 }
 
-.choose-title {
+.favourite-title {
     text-align: center;
     font-size: 60px;
 }
 
-.choose-title_italic {
+.favourite-title_italic {
     color: #B0907A;
     font-style: italic;
 }
 
-.choose-slider {
+.favourite-slider {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -253,22 +260,22 @@ h6 {
     background-color: #665F55;
 }
 
-.photos-section {
+.about-section {
     padding-top: 40px;
 }
 
-.photos-title {
+.about-title {
     font-size: 60px;
     line-height: 75px;
     font-weight: 600;
 }
 
-.photos-title_italic {
+.about-title_italic {
     color: #B0907A;
     font-style: italic;
 }
 
-.photos-count {
+.about-count {
     display: flex;
     justify-content: space-between;
     margin: 40px 0 0 0;
@@ -280,61 +287,61 @@ h6 {
     margin-bottom: 40px;
 }
 
-.photos-left_top {
+.about-left_top {
     height: 590px;
     background: url("images/about-1.png") 50% no-repeat;
 }
 
-.photos-left_bottom {
+.about-left_bottom {
     height: 430px;
     background: url("images/about-2.png") 50% no-repeat;
 }
 
-.photos-right_top {
+.about-right_top {
     height: 430px;
     background: url("images/about-3.png") 50% no-repeat;
 }
 
-.photos-right_bottom {
+.about-right_bottom {
     height: 590px;
     background: url("images/about-4.png") 50% no-repeat;
 }
 
-.download-section {
+.mobile-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 0 60px 0;
 }
 
-.download-info {
+.mobile-info {
     width: 630px;
     height: 342px;
 }
 
-.download-title {
+.mobile-title {
     font-size: 60px;
     line-height: 75px;
     font-weight: 600;
 }
 
-.download-title_italic {
+.mobile-title_italic {
     color: #B0907A;
     font-style: italic;
 }
 
-.download-description {
+.mobile-description {
     font-weight: 400;
     line-height: 24px;
     padding: 40px 0;
 }
 
-.download-buttons {
+.mobile-buttons {
     display: flex;
     align-items: center;
 }
 
-.download-button {
+.mobile-button {
     width: 200px;
     height: 64px;
     border: #665F55 1px solid;
@@ -345,11 +352,11 @@ h6 {
     align-items: center;
 }
 
-.download-button-info {
+.mobile-button-info {
     margin: 0 0 0 10px
 }
 
-.download-button-info__text {
+.mobile-button-info__text {
     font-size: 10px;
     line-height: 14px;
 }
