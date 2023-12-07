@@ -35,7 +35,6 @@
                     <img src="images/coffee-cup.svg" alt="cup">
                 </div>
             </a>
-
         </div>
     </header>
     <main>
@@ -51,9 +50,11 @@
                         inviting space to enjoy their favorite beverage.
                     </div>
                     <a href="MenuPage/menuPage.html">
-                        <button class="enjoy-info__button">Menu</button>
+                        <button class="enjoy-info__button">
+                            <span>Menu</span>
+                            <img class="enjoy-info__button_img" src="images/coffee-cup.svg" alt="cup">
+                        </button>
                     </a>
-
                 </div>
             </div>
         </section>
@@ -160,12 +161,17 @@
         <div class="contacts">
             <div class="contacts-title">Contact us</div>
             <div class="contacts-info">
-                <img class="contacts-icon" src="images/pin-alt.svg" alt="pin">
-                <span class="contacts-text">8558 Green Rd.,  LA</span>
+                <a href="https://www.google.com/maps/place/Green+Caff%C3%A8+Nero/@52.2342688,20.9725852,14z/data=!4m10!1m2!2m1!1z0LLQsNGA0YjQsNCy0LAg0LrQvtGE0LXQudC90Lg!3m6!1s0x471ecc8b340c6fe5:0x29d47fcd9af1db8c!8m2!3d52.2342677!4d21.0096118!15sCh3QstCw0YDRiNCw0LLQsCDQutC-0YTQtdC50L3QuFofIh3QstCw0YDRiNCw0LLQsCDQutC-0YTQtdC50L3QuJIBBGNhZmWaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUlBkWFJ1TmkxQlJSQULgAQA!16s%2Fg%2F1pp2vgd7c?entry=ttu"
+                   target="_blank">
+                    <img class="contacts-icon" src="images/pin-alt.svg" alt="pin">
+                    <span class="contacts-text">8558 Green Rd.,  LA</span>
+                </a>
             </div>
             <div class="contacts-info">
-                <img class="contacts-icon" src="images/phone.svg" alt="phone">
-                <span class="contacts-text">+1 (603) 555-0123</span>
+                <a href="tel:+1 (603) 555-0123">
+                    <img class="contacts-icon" src="images/phone.svg" alt="phone">
+                    <span class="contacts-text"> +1 (603) 555-0123</span>
+                </a>
             </div>
             <div class="contacts-info">
                 <div class="contacts-icon contacts-icon__clock">
@@ -177,5 +183,6 @@
         </div>
     </footer>
 </div>
+<script src="index.js"></script>
 </body>
 </html>

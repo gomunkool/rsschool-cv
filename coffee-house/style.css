@@ -180,6 +180,22 @@ h6 {
     border-radius: 100px;
     background-color: #E1D4C9;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enjoy-info__button span {
+    margin: 0 10px 0 20px;
+}
+
+.enjoy-info__button_img {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.enjoy-info__button:hover img {
+    opacity: 100;
 }
 
 .favourite {
@@ -421,6 +437,10 @@ h6 {
 
 .contacts-icon {
     margin: 0 5px 0 0
+}
+
+.contacts-info a {
+    color: #E1D4C9;
 }
 
 .contacts-icon__clock {
