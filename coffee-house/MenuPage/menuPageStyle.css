@@ -330,6 +330,16 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+
+}
+
+.footer-apps__icon:hover {
+    background-color: #E1D4C9;
+}
+
+.footer-apps__icon:hover svg path {
+    stroke: #403F3D;
 }
 
 .contacts {
@@ -343,11 +353,19 @@ h6 {
 }
 
 .contacts-info {
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
+    height: 24px;
 }
 
 .contacts-info a {
     color: #E1D4C9;
+    height: 24px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.contacts-info a:hover {
+    border-bottom: #E1D4C9 2px solid;
 }
 
 .contacts-icon {

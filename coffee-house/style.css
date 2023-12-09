@@ -88,10 +88,13 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    font-weight: 400;
 }
 
-
+.coffee-house{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
 .count {
     padding: 20px 40px 40px 40px;
     margin: 0 auto;
@@ -120,6 +123,13 @@ h6 {
 
 .header-nav li {
     margin: 0 15px;
+    cursor: pointer;
+    height: 28px;
+    transition: 0.3s;
+}
+
+.header-nav li:hover {
+    border-bottom: #403F3D 2px solid;
 }
 
 .header-menu-link {
@@ -161,6 +171,7 @@ h6 {
 .enjoy-info__title_first {
     color: #B0907A;
     font-style: italic;
+    display: inline-block;
 }
 
 .enjoy-info__title_other {
@@ -210,6 +221,7 @@ h6 {
 .favourite-title_italic {
     color: #B0907A;
     font-style: italic;
+    display: inline-block;
 }
 
 .favourite-slider {
@@ -227,6 +239,17 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.slider-button:hover {
+    background-color: #665F55;
+
+}
+
+.slider-button:hover svg path {
+    stroke: #E1D4C9
 }
 
 .slider {
@@ -289,6 +312,7 @@ h6 {
 .about-title_italic {
     color: #B0907A;
     font-style: italic;
+    display: inline-block;
 }
 
 .about-count {
@@ -344,6 +368,7 @@ h6 {
 .mobile-title_italic {
     color: #B0907A;
     font-style: italic;
+    display: inline-block;
 }
 
 .mobile-description {
@@ -366,6 +391,20 @@ h6 {
     padding: 12px 20px;
     display: flex;
     align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mobile-button:hover {
+    background-color: #665F55;
+}
+
+.mobile-button:hover svg path {
+    fill: #E1D4C9;
+}
+
+.mobile-button:hover .mobile-button-info {
+    color: #E1D4C9;
 }
 
 .mobile-button-info {
@@ -419,6 +458,15 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+}
+
+.footer-apps__icon:hover {
+    background-color: #E1D4C9;
+}
+
+.footer-apps__icon:hover svg path {
+    stroke: #403F3D;
 }
 
 .contacts {
@@ -432,15 +480,24 @@ h6 {
 }
 
 .contacts-info {
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
+    height: 24px;
 }
 
 .contacts-icon {
     margin: 0 5px 0 0
 }
 
+
 .contacts-info a {
     color: #E1D4C9;
+    height: 24px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.contacts-info a:hover {
+    border-bottom: #E1D4C9 2px solid;
 }
 
 .contacts-icon__clock {
