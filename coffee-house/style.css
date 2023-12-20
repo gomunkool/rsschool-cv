@@ -149,20 +149,54 @@ h6 {
     max-width: 72px;
 }
 
+.header-burger {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    border: #665F55 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    position: absolute;
+    top: 32px;
+    right: 40px;
+}
+
+.header-burger__lines {
+    width: 16px;
+    height: 8px;
+    border-top: #665F55 1px solid;
+    border-bottom: #665F55 1px solid;
+}
+
+@media (max-width: 768px) {
+    .header-burger {
+        visibility: visible;
+    }
+
+
+    .nav-count {
+        visibility: hidden;
+    }
+
+    .header-menu-link {
+        visibility: hidden;
+    }
+}
+
 .enjoy-count {
     background: url('images/img-hero.png') 50% no-repeat;
     height: 644px;
     margin: 20px 0;
     border-radius: 40px;
     position: relative;
+    padding: 100px;
 }
 
 .enjoy-info {
     max-width: 530px;
     max-height: 444px;
-    position: absolute;
-    left: 100px;
-    top: 85px;
 }
 
 .enjoy-info__title {
@@ -209,7 +243,11 @@ h6 {
 .enjoy-info__button:hover img {
     opacity: 100;
 }
-
+@media (max-width: 800px) {
+    .enjoy-count{
+        padding: 100px 60px;
+    }
+}
 .favourite {
     margin: 100px 0;
 }
@@ -308,12 +346,13 @@ h6 {
     font-size: 60px;
     line-height: 75px;
     font-weight: 600;
+    display: inline;
 }
 
 .about-title_italic {
     color: #B0907A;
     font-style: italic;
-    display: inline-block;
+    display: inline;
 }
 
 .about-count {
