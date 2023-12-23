@@ -103,6 +103,18 @@ h6 {
     max-width: 1440px;
 }
 
+@media (max-width: 650px) {
+    .count {
+        padding: 20px 20px 40px 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .count {
+        padding: 20px 16px 40px 16px;
+    }
+}
+
 .header-count {
     display: flex;
     align-items: center;
@@ -175,13 +187,18 @@ h6 {
         visibility: visible;
     }
 
-
     .nav-count {
         visibility: hidden;
     }
 
     .header-menu-link {
         visibility: hidden;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-burger {
+        right: 20px;
     }
 }
 
@@ -206,11 +223,11 @@ h6 {
 .enjoy-info__title_first {
     color: #B0907A;
     font-style: italic;
-    display: inline-block;
+    display: inline;
 }
 
 .enjoy-info__title_other {
-    color: #E1D4C9
+    color: #E1D4C9;
 }
 
 .enjoy-info__description {
@@ -243,11 +260,24 @@ h6 {
 .enjoy-info__button:hover img {
     opacity: 100;
 }
+
 @media (max-width: 800px) {
-    .enjoy-count{
+    .enjoy-count {
         padding: 100px 60px;
     }
 }
+
+@media (max-width: 715px) {
+    .enjoy-count {
+        padding: 60px 16px;
+        height: 100%;
+    }
+
+    .enjoy-info__title {
+        font-size: 42px;
+    }
+}
+
 .favourite {
     margin: 100px 0;
 }
@@ -271,7 +301,7 @@ h6 {
 }
 
 .slider-button {
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     border-radius: 100px;
     border: #665F55 1px solid;
@@ -280,6 +310,7 @@ h6 {
     justify-content: center;
     transition: 0.3s;
     cursor: pointer;
+    padding: 10px;
 }
 
 .slider-button:hover {
@@ -292,8 +323,6 @@ h6 {
 }
 
 .slider {
-    max-width: 1152px;
-    height: 640px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -306,8 +335,8 @@ h6 {
     margin: 15px 0 0 0;
 }
 
+
 .slider__info {
-    width: 480px;
     text-align: center;
     font-weight: 400;
     line-height: 24px;
@@ -336,6 +365,28 @@ h6 {
 
 .slide-bar-count__item_active {
     background-color: #665F55;
+}
+@media (max-width: 750px) {
+    .slider__img {
+        width: 50vw;
+    }
+}
+@media (max-width: 650px) {
+    .favourite {
+        margin: 80px 0 40px 0;
+    }
+
+    .slider-button {
+        display: none;
+    }
+    .slider__img {
+        width: 90vw;
+    }
+
+    .favourite-title {
+        text-align: center;
+        font-size: 32px;
+    }
 }
 
 .about-section {
@@ -385,6 +436,32 @@ h6 {
 .about-right_bottom {
     height: 590px;
     background: url("images/about-4.png") 50% no-repeat;
+}
+
+
+@media (max-width: 768px) {
+    .about-count {
+        display: block;
+    }
+
+    .photo {
+        width: 100%
+    }
+
+    .about-left_bottom {
+        display: none;
+    }
+
+    .about-right_top {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 .mobile-section {
@@ -466,6 +543,42 @@ h6 {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .mobile-section {
+        height: 100%;
+        display: block;
+        padding: 0 0 50px 0;
+    }
+
+    .mobile-info {
+        max-width: 678px;
+    }
+
+    .download-photo {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .mobile-title {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 60px 0 0 0;
+    }
+
+    .mobile-buttons {
+        display: block;
+    }
+
+    .mobile-button {
+        margin: 0 0 20px 0;
+    }
+
+    .mobile-info {
+        height: 100%;
+    }
+}
+
 .footer {
     height: 450px;
     border-radius: 40px;
@@ -476,21 +589,11 @@ h6 {
 }
 
 .footer-left {
-    width: 530px;
+    max-width: 530px;
     height: 150px;
     margin: 0 100px 0 0;
 }
 
-@media (max-width: 1120px) {
-    .footer {
-        align-items: start;
-        padding: 45px;
-    }
-
-    .footer-left {
-        margin: 0 50px 0 0;
-    }
-}
 
 .footer-title {
     font-size: 60px;
@@ -588,4 +691,48 @@ h6 {
     position: absolute;
     top: 7px;
     left: 7px;
+}
+
+@media (max-width: 1120px) {
+    .footer {
+        align-items: start;
+        padding: 45px;
+    }
+
+    .footer-left {
+        margin: 0 50px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: block;
+        height: 100%;
+        padding: 100px 60px;
+    }
+
+    .footer-left {
+        height: 100%;
+    }
+
+    .contacts {
+        padding: 80px 0 0 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        padding: 60px 16px;
+    }
+
+    .footer-title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        width: 316px;
+    }
+
+    .contacts {
+        padding: 40px 0 0 0;
+    }
 }
