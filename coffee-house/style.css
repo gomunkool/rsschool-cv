@@ -366,11 +366,13 @@ h6 {
 .slide-bar-count__item_active {
     background-color: #665F55;
 }
+
 @media (max-width: 750px) {
     .slider__img {
         width: 50vw;
     }
 }
+
 @media (max-width: 650px) {
     .favourite {
         margin: 80px 0 40px 0;
@@ -379,6 +381,7 @@ h6 {
     .slider-button {
         display: none;
     }
+
     .slider__img {
         width: 90vw;
     }
@@ -407,13 +410,24 @@ h6 {
 }
 
 .about-count {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     margin: 40px 0 0 0;
 }
 
+.about-left {
+    width: 100%;
+    margin: 0 40px 0 0;
+}
+
+
+.about-right {
+    width: 100%;
+}
+
+
 .photo {
-    width: 46vw;
     border-radius: 20px;
     margin-bottom: 40px;
 }
@@ -444,9 +458,6 @@ h6 {
         display: block;
     }
 
-    .photo {
-        width: 100%
-    }
 
     .about-left_bottom {
         display: none;
@@ -729,7 +740,7 @@ h6 {
         font-size: 32px;
         line-height: 40px;
         font-weight: 600;
-        width: 316px;
+        max-width: 316px;
     }
 
     .contacts {
