@@ -43,6 +43,7 @@ body {
     background-color: #E1D4C9;
     scroll-behavior: smooth;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 input,
@@ -118,6 +119,12 @@ h6 {
 .header-count {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+
+.logo-count {
+    align-self: flex-start;
 }
 
 .logo {
@@ -127,6 +134,13 @@ h6 {
 
 .nav-count {
     flex-grow: 1;
+}
+
+.nav-count_open {
+    position: relative;
+    right: -100%;
+    animation: appearance-nav-menu 0.4s ease-in;
+    animation-fill-mode: forwards;
 }
 
 .header-nav {
@@ -141,8 +155,18 @@ h6 {
     transition: 0.3s;
 }
 
+
 .header-nav li:hover {
     border-bottom: #403F3D 2px solid;
+}
+
+.header-nav__menu-link {
+    display: none;
+    margin: 30px 0 0 0;
+}
+
+.header-nav__menu-link img {
+    margin: 0 0 0 10px;
 }
 
 .header-menu-link {
@@ -162,44 +186,79 @@ h6 {
 }
 
 .header-nav_open {
-    position: fixed;
+    position: sticky;
     top: 100px;
     right: 0;
     left: 0;
     bottom: 0;
     background-color: #E1D4C9;
     display: flex;
+    justify-content: start;
     z-index: 50;
     width: 100%;
     height: 100vh;
     visibility: visible;
+    flex-direction: column;
 }
 
+@keyframes appearance-nav-menu {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.header-nav_open:first-child {
+    margin: 120px 0 0 0;
+}
+
+.header-nav_open li {
+    margin: 0 0 40px 0;
+}
+
+.header-nav_open .header-nav__menu-link {
+    display: flex;
+}
 
 .header-burger {
     width: 44px;
     height: 44px;
     border-radius: 100%;
     border: #665F55 1px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     visibility: hidden;
     position: absolute;
-    top: 32px;
-    right: 40px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-burger__lines {
+.header-burger__top-line {
     width: 16px;
-    height: 8px;
-    border-top: #665F55 1px solid;
-    border-bottom: #665F55 1px solid;
-    transition: all 0.3s ease 0s;
+    height: 1px;
+    background-color: #665F55;
+    margin: 0 0 2px 0;
+    transition: 0.3s;
 }
 
-.header-burger__lines_open {
+.header-burger__bottom-line {
+    width: 16px;
+    height: 1px;
+    background-color: #665F55;
+    margin: 2px 0 0 0;
+    transition: 0.3s;
+}
 
+.header-burger__top-line_open {
+    transform: translate(1px, 3px) rotate(45deg);
+}
+
+.header-burger__bottom-line_open {
+    transform: translate(0, -1px)rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -230,7 +289,6 @@ h6 {
     position: relative;
     padding: 100px;
 }
-
 
 
 .enjoy-info {
