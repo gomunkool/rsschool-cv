@@ -31,79 +31,107 @@
 // }
 //
 // window.addEventListener('resize', changeSizeDisplay)
+//
+//
+// //slider
+// let currentSlide = 0
+// let timerSwapSliders;
+// const sliderButtonLeft = document.querySelector('.slider-button__left')
+// const sliderButtonRight = document.querySelector('.slider-button__right')
+// const slidersCollection = document.querySelectorAll('.slider')
+// const sliderBarCollection = document.querySelectorAll('.slide-bar-count__item')
+// const sliderCount = document.querySelector('.slider-count')
+//
+// function changeCurrentSlide(direction) {
+//   slidersCollection.forEach((slide) => {
+//     slide.classList.remove('slider__active')
+//     slide.classList.remove('slider__active_left')
+//     slide.classList.remove('slider__active_right')
+//     slidersCollection[currentSlide].classList.add('slider__active')
+//     slidersCollection[currentSlide].classList.add(direction)
+//   })
+//
+//   sliderBarCollection.forEach((slideBar) => {
+//     slideBar.classList.remove('slide-bar-count__item_active')
+//     sliderBarCollection[currentSlide].classList.add('slide-bar-count__item_active')
+//   })
+// }
+//
+// sliderButtonLeft.addEventListener('click', () => {
+//   currentSlide === 0 ? currentSlide = 2 : currentSlide--
+//   changeCurrentSlide('slider__active_left')
+//   clearTimeout(timerSwapSliders)
+//   startTimerSlider()
+// })
+//
+// sliderButtonRight.addEventListener('click', () => {
+//   currentSlide === 2 ? currentSlide = 0 : currentSlide++
+//   changeCurrentSlide('slider__active_right')
+//   clearTimeout(timerSwapSliders)
+//   startTimerSlider()
+// })
+//
+// function startTimerSlider() {
+//   timerSwapSliders = setTimeout(function tick() {
+//     currentSlide === 2 ? currentSlide = 0 : currentSlide++
+//     changeCurrentSlide('slider__active_right')
+//     timerSwapSliders = setTimeout(tick, 5000);
+//   }, 5000);
+// }
+//
+// changeCurrentSlide('slider__active_right')
+// startTimerSlider()
+//
+//
+// let swapCoordinates = null
+//
+// sliderCount.addEventListener('touchstart', swapTouchStart)
+// document.addEventListener('touchend', swapTouchEnd)
+//
+// function swapTouchStart(event) {
+//   swapCoordinates = event.touches[0].screenX
+// }
+//
+// function swapTouchEnd(event) {
+//   const touchEnd = event.changedTouches[0].screenX
+//   if (touchEnd < swapCoordinates) {
+//     currentSlide === 0 ? currentSlide = 2 : currentSlide--
+//     changeCurrentSlide('slider__active_left')
+//     clearTimeout(timerSwapSliders)
+//     startTimerSlider()
+//   }
+//   if (touchEnd > swapCoordinates) {
+//     currentSlide === 2 ? currentSlide = 0 : currentSlide++
+//     changeCurrentSlide('slider__active_right')
+//     clearTimeout(timerSwapSliders)
+//     startTimerSlider()
+//   }
+// }
 
+//categories
+const menuButtons = document.querySelectorAll('.menu-button')
+const products = document.querySelectorAll('.product')
+let currentMenuList = 'coffee'
 
-//carousel
-let currentSlide = 0
-let timerSwapSliders;
-const sliderButtonLeft = document.querySelector('.slider-button__left')
-const sliderButtonRight = document.querySelector('.slider-button__right')
-const slidersCollection = document.querySelectorAll('.slider')
-const sliderBarCollection = document.querySelectorAll('.slide-bar-count__item')
-const sliderCount = document.querySelector('.slider-count')
-
-function changeCurrentSlide(direction) {
-  slidersCollection.forEach((slide) => {
-    slide.classList.remove('slider__active')
-    slide.classList.remove('slider__active_left')
-    slide.classList.remove('slider__active_right')
-    slidersCollection[currentSlide].classList.add('slider__active')
-    slidersCollection[currentSlide].classList.add(direction)
-
+menuButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    currentMenuList = event.currentTarget.className.split(' ')[1].split('_')[1]
+    menuButtons.forEach((but) => {
+      but.classList.remove('menu-button_active')
+    })
+    event.currentTarget.classList.add('menu-button_active');
+    displayProducts()
   })
-  sliderBarCollection.forEach((slideBar) => {
-    slideBar.classList.remove('slide-bar-count__item_active')
-    sliderBarCollection[currentSlide].classList.add('slide-bar-count__item_active')
-  })
-}
-
-sliderButtonLeft.addEventListener('click', () => {
-  currentSlide === 0 ? currentSlide = 2 : currentSlide--
-  changeCurrentSlide('slider__active_left')
-  clearTimeout(timerSwapSliders)
-  startTimerSlider()
 })
 
-sliderButtonRight.addEventListener('click', () => {
-  currentSlide === 2 ? currentSlide = 0 : currentSlide++
-  changeCurrentSlide('slider__active_right')
-  clearTimeout(timerSwapSliders)
-  startTimerSlider()
-})
-
-function startTimerSlider() {
-  timerSwapSliders = setTimeout(function tick() {
-    currentSlide === 2 ? currentSlide = 0 : currentSlide++
-    changeCurrentSlide('slider__active_right')
-    timerSwapSliders = setTimeout(tick, 5000);
-  }, 5000);
+function displayProducts() {
+  products.forEach((product) => {
+    const productClass = product.classList[1].split('_')[1]
+    product.classList.remove('product_disabled')
+    if (productClass !== currentMenuList) {
+      product.classList.add('product_disabled')
+    }
+  })
 }
 
-changeCurrentSlide('slider__active_right')
-startTimerSlider()
-
-
-let swapCoordinates = null
-
-sliderCount.addEventListener('touchstart', swapTouchStart)
-document.addEventListener('touchend', swapTouchEnd)
-
-function swapTouchStart(event) {
-  swapCoordinates = event.touches[0].screenX
-}
-
-function swapTouchEnd(event) {
-  const touchEnd = event.changedTouches[0].screenX
-  if (touchEnd < swapCoordinates) {
-    currentSlide === 0 ? currentSlide = 2 : currentSlide--
-    changeCurrentSlide('slider__active_left')
-    clearTimeout(timerSwapSliders)
-    startTimerSlider()
-  }
-  if (touchEnd > swapCoordinates) {
-    currentSlide === 2 ? currentSlide = 0 : currentSlide++
-    changeCurrentSlide('slider__active_right')
-    clearTimeout(timerSwapSliders)
-    startTimerSlider()
-  }
-}
+displayProducts()

@@ -282,6 +282,10 @@ h6 {
     background-size: 309px 310px;
 }
 
+.product_disabled {
+    display: none;
+}
+
 .product__image_1 {
     background: url("images/coffee-1.png") center no-repeat;
 }
@@ -312,6 +316,54 @@ h6 {
 
 .product__image_8 {
     background: url("images/coffee-8.png") center no-repeat;
+}
+
+.product__image_9 {
+    background: url("images/tea-1.png") center no-repeat;
+}
+
+.product__image_10 {
+    background: url("images/tea-2.png") center no-repeat;
+}
+
+.product__image_11 {
+    background: url("images/tea-3.png") center no-repeat;
+}
+
+.product__image_12 {
+    background: url("images/tea-4.png") center no-repeat;
+}
+
+.product__image_13 {
+    background: url("images/dessert-1.png") center no-repeat;
+}
+
+.product__image_14 {
+    background: url("images/dessert-2.png") center no-repeat;
+}
+
+.product__image_15 {
+    background: url("images/dessert-3.png") center no-repeat;
+}
+
+.product__image_16 {
+    background: url("images/dessert-4.png") center no-repeat;
+}
+
+.product__image_17 {
+    background: url("images/dessert-5.png") center no-repeat;
+}
+
+.product__image_18 {
+    background: url("images/dessert-6.png") center no-repeat;
+}
+
+.product__image_19 {
+    background: url("images/dessert-7.png") center no-repeat;
+}
+
+.product__image_20 {
+    background: url("images/dessert-8.png") center no-repeat;
 }
 
 .product__title {
