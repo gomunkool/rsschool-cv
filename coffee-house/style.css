@@ -419,6 +419,35 @@ h6 {
     justify-content: space-between;
 }
 
+.slider__active_right {
+    animation-name: swap-effect-right;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes swap-effect-right {
+    0% {
+        transform: translate(50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.slider__active_left {
+    animation-name: swap-effect-left;
+    animation-duration: 0.5s;
+}
+
+@keyframes swap-effect-left {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 .slider__title {
     font-size: 24px;
     line-height: 30px;
