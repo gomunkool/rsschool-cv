@@ -396,9 +396,6 @@ h6 {
 }
 
 @media (max-width: 768px) {
-    .product_5, .product_6, .product_7, .product_8 {
-        display: none
-    }
 
     .refresh-button {
         display: flex;
@@ -409,6 +406,10 @@ h6 {
         height: 60px;
         border-radius: 100px;
         border: #665F55 1px solid;
+    }
+
+    .refresh-button_disabled {
+        display: none;
     }
 
     .menu-products-count {

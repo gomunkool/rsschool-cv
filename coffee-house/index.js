@@ -111,11 +111,14 @@
 //categories
 const menuButtons = document.querySelectorAll('.menu-button')
 const products = document.querySelectorAll('.product')
+const refreshButton = document.querySelector('.refresh-button')
 let currentMenuList = 'coffee'
+const productArr = [];
 
 menuButtons.forEach((button) => {
   button.addEventListener('click', (event) => {
     currentMenuList = event.currentTarget.className.split(' ')[1].split('_')[1]
+    refreshButton.classList.remove('refresh-button_disabled')
     menuButtons.forEach((but) => {
       but.classList.remove('menu-button_active')
     })
@@ -125,13 +128,41 @@ menuButtons.forEach((button) => {
 })
 
 function displayProducts() {
+  productArr.splice(0, productArr.length)
   products.forEach((product) => {
     const productClass = product.classList[1].split('_')[1]
     product.classList.remove('product_disabled')
     if (productClass !== currentMenuList) {
       product.classList.add('product_disabled')
+    } else {
+      productArr.push(product)
     }
   })
+  productSmallScreen()
 }
 
+
+function productSmallScreen() {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 768) {
+    for (let i = 4; i < productArr.length; i++) {
+      productArr[i].classList.add('product_disabled')
+    }
+  } else {
+    productArr.forEach((product) => {
+      product.classList.remove('product_disabled')
+    })
+  }
+}
+
+refreshButton.addEventListener('click', () => {
+  productArr.forEach((product) => {
+    product.classList.remove('product_disabled')
+    refreshButton.classList.add('refresh-button_disabled')
+  })
+})
+
+productSmallScreen()
 displayProducts()
+
+window.addEventListener('resize', productSmallScreen);
