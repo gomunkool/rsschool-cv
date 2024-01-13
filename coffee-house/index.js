@@ -166,3 +166,82 @@ productSmallScreen()
 displayProducts()
 
 window.addEventListener('resize', productSmallScreen);
+
+//modal window
+const body = document.querySelector('body')
+const modalWindow = document.querySelector('.modal-window')
+const modalWindowCloseButton = document.querySelector('.modal-window__close-button')
+const modalWindowFon = document.querySelector('.modal-window__fon')
+const sizeButtons = document.querySelectorAll('.modal-window-size__button')
+const modalTitle = document.querySelector('.modal-window__title')
+const modalDescription = document.querySelector('.modal-window__description')
+const modalCoast = document.querySelector('.modal-window__total-sum')
+const modalImg = document.querySelector('.modal-window__img')
+import productsData from './data.js'
+const modalSize = document.querySelectorAll('.modal-window-size__button__text')
+const modalAdditives = document.querySelectorAll('.modal-window-additives__button__text')
+
+
+const currentProduct = {}
+let modalProductTitleData;
+let modalProductDescriptionData;
+let modalProductPriseData;
+let modalProductImgData;
+let totalCoast;
+let sizeCoast = 0
+
+products.forEach((product) => {
+  product.addEventListener('click', (event) => {
+    window.scrollTo({top: 0});
+    body.classList.add('body_disabled')
+    modalWindow.classList.add('modal-window_active')
+
+
+
+    modalProductTitleData = event.currentTarget.querySelector('.product__title').innerText;
+    modalProductDescriptionData = event.currentTarget.querySelector('.product__description').innerText;
+    modalProductPriseData = event.currentTarget.querySelector('.product__prise').innerText;
+    const ProductImg = event.currentTarget.querySelector('.product__image')
+    modalProductImgData = window.getComputedStyle(ProductImg).getPropertyValue('background');
+
+    productsData.forEach((data) => {
+      if (modalProductTitleData === data.name) {
+        Object.assign(currentProduct, data);
+      }
+    })
+
+    modalTitle.innerHTML = `${modalProductTitleData}`
+    modalDescription.innerHTML = `${modalProductDescriptionData}`
+    modalCoast.innerHTML = `${modalProductPriseData}`
+    modalImg.style.background = `${modalProductImgData}`
+    modalSize[0].innerHTML = `${currentProduct.sizes.s.size}`
+    modalSize[1].innerHTML = `${currentProduct.sizes.m.size}`
+    modalSize[2].innerHTML = `${currentProduct.sizes.l.size}`
+    modalAdditives[0].innerHTML = `${currentProduct.additives[0].name}`
+    modalAdditives[1].innerHTML = `${currentProduct.additives[1].name}`
+    modalAdditives[2].innerHTML = `${currentProduct.additives[2].name}`
+  })
+})
+
+
+modalWindowCloseButton.addEventListener('click', () => {
+  body.classList.remove('body_disabled')
+  modalWindow.classList.remove('modal-window_active')
+})
+
+modalWindowFon.addEventListener('click', (event) => {
+  if (event.target.className === 'modal-window__fon') {
+    body.classList.remove('body_disabled')
+    modalWindow.classList.remove('modal-window_active')
+  }
+})
+
+
+sizeButtons.forEach((button) => {
+  button.addEventListener('click', (el) => {
+    sizeButtons.forEach((but) => {
+      but.classList.remove('modal-window-size__button_active')
+    })
+    button.classList.add('modal-window-size__button_active')
+  })
+})
