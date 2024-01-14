@@ -5,8 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee-house/MenuPage/menuPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/MenuPage/menuPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee-house/MenuPage/menuPageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/MenuPage/menuPageStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee-house/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/MenuPage/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee-house/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee-house/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee-house/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
       <recent name="F:\rsschool-cv\coffee-house\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\rsschool-cv\coffee-house\MenuPage" />
       <recent name="F:\rsschool-cv\coffee-house" />
     </key>
   </component>
@@ -70,7 +73,8 @@
       <workItem from="1703947692491" duration="6480000" />
       <workItem from="1703958053026" duration="1981000" />
       <workItem from="1704793644232" duration="38320000" />
-      <workItem from="1705143139194" duration="14006000" />
+      <workItem from="1705143139194" duration="24823000" />
+      <workItem from="1705254515747" duration="2130000" />
     </task>
     <servers />
   </component>

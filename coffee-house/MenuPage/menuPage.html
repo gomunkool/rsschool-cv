@@ -10,33 +10,38 @@
           rel="stylesheet">
     <title>Coffee House</title>
 </head>
-<body">
+<body>
 <div class="count">
     <header>
         <div class="header-count">
-            <a href="../index.html">
-                <div class="logo-count">
-                    <img class="logo" src="images/logo.svg" alt="logo">
-                </div>
+            <a href="../index.html" class="logo-count">
+                <img class="logo" src="images/logo.svg" alt="logo">
             </a>
             <div class="nav-count">
                 <nav>
                     <ul class="header-nav">
-                        <li>Favorite coffee</li>
-                        <li>About</li>
-                        <li>Mobile app</li>
-                        <li>Contact us</li>
+                        <li><a class="header-nav__links">Favorite coffee</a></li>
+                        <li><a class="header-nav__links">About</a></li>
+                        <li><a class="header-nav__links">Mobile app</a></li>
+                        <li><a class="header-nav__links">Contact us</a></li>
+                        <li><a class="header-nav__menu-link header-nav__links">
+                            <div class="header-menu">
+                                <div>Menu</div>
+                                <img src="images/coffee-cup.svg" alt="cup">
+                            </div>
+                        </a></li>
                     </ul>
                 </nav>
             </div>
-            <a class="header-menu-link">
+            <a class="header-menu-link" href="MenuPage/menuPage.html">
                 <div class="header-menu">
                     <div>Menu</div>
                     <img src="images/coffee-cup.svg" alt="cup">
                 </div>
             </a>
             <div class="header-burger">
-                <div class="header-burger__lines"></div>
+                <div class="header-burger__top-line"></div>
+                <div class="header-burger__bottom-line"></div>
             </div>
         </div>
     </header>
@@ -341,6 +346,6 @@
         </div>
     </footer>
 </div>
-<script type="module" src="../index.js"></script>
+<script type="module" src="menuPage.js"></script>
 </body>
 </html>

@@ -281,16 +281,28 @@ h6 {
 }
 
 .enjoy-count {
-    background: url('images/img-hero.png') 50% no-repeat;
+    position: relative;
+    z-index: 10;
+    max-width: 1360px;
     height: 644px;
     margin: 20px 0;
     border-radius: 40px;
-    position: relative;
     padding: 100px;
 }
 
+.enjoy-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    max-width: 1360px;
+    margin: 20px 0;
+    border-radius: 40px;
+}
 
 .enjoy-info {
+    position: relative;
+    z-index: 10;
     max-width: 530px;
     max-height: 444px;
 }
@@ -359,6 +371,7 @@ h6 {
 
 .favourite {
     margin: 100px 0;
+    padding: 100px 0 0 0;
 }
 
 .favourite-title {
