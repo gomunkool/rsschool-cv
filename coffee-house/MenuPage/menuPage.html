@@ -14,29 +14,34 @@
 <div class="count">
     <header>
         <div class="header-count">
-            <a href="../index.html">
-                <div class="logo-count">
-                    <img class="logo" src="images/logo.svg" alt="logo">
-                </div>
+            <a href="../index.html" class="logo-count">
+                <img class="logo" src="images/logo.svg" alt="logo">
             </a>
             <div class="nav-count">
                 <nav>
                     <ul class="header-nav">
-                        <li>Favorite coffee</li>
-                        <li>About</li>
-                        <li>Mobile app</li>
-                        <li>Contact us</li>
+                        <li><a class="header-nav__links">Favorite coffee</a></li>
+                        <li><a class="header-nav__links">About</a></li>
+                        <li><a class="header-nav__links">Mobile app</a></li>
+                        <li><a class="header-nav__links">Contact us</a></li>
+                        <li><a class="header-nav__menu-link header-nav__links">
+                            <div class="header-menu">
+                                <div>Menu</div>
+                                <img src="images/coffee-cup.svg" alt="cup">
+                            </div>
+                        </a></li>
                     </ul>
                 </nav>
             </div>
-            <a class="header-menu-link">
+            <a class="header-menu-link" href="MenuPage/menuPage.html">
                 <div class="header-menu">
                     <div>Menu</div>
                     <img src="images/coffee-cup.svg" alt="cup">
                 </div>
             </a>
             <div class="header-burger">
-                <div class="header-burger__lines"></div>
+                <div class="header-burger__top-line"></div>
+                <div class="header-burger__bottom-line"></div>
             </div>
         </div>
     </header>
@@ -46,19 +51,19 @@
             <span class="menu-title_italic">amazing surprise</span>
         </div>
         <div class="menu-buttons-count">
-            <div class="menu-button menu-button_active">
+            <div class="menu-button menu-button_coffee menu-button_active">
                 <div class="menu-button__image">
                     <img src="images/cup.svg" alt="cup">
                 </div>
                 <p class="menu-button__text ">Coffee</p>
             </div>
-            <div class="menu-button">
+            <div class="menu-button menu-button_tee">
                 <div class="menu-button__image">
                     <img src="images/tea.svg" alt="tea">
                 </div>
                 <p class="menu-button__text">Tea</p>
             </div>
-            <div class="menu-button">
+            <div class="menu-button menu-button_dessert">
                 <div class="menu-button__image">
                     <img src="images/cake.svg" alt="cake">
                 </div>
@@ -66,14 +71,14 @@
             </div>
         </div>
         <div class="menu-products-count">
-            <div class="product product_1">
+            <div class="product product_coffee product_1">
                 <div class="product__image product__image_1"></div>
                 <div class="product__title">Irish coffee</div>
                 <div class="product__description">Fragrant black coffee with Jameson Irish whiskey and whipped milk
                 </div>
                 <div class="product__prise">$7.00</div>
             </div>
-            <div class="product product_2">
+            <div class="product product_coffee product_2">
                 <div class="product__image product__image_2"></div>
                 <div class="product__title">Kahlua coffee</div>
                 <div class="product__description">Classic coffee with milk and Kahlua liqueur under a cap of frothed
@@ -81,35 +86,35 @@
                 </div>
                 <div class="product__prise">$7.00</div>
             </div>
-            <div class="product product_3">
+            <div class="product product_coffee product_3">
                 <div class="product__image product__image_3"></div>
                 <div class="product__title">Honey raf</div>
                 <div class="product__description">Espresso with frothed milk, cream and aromatic honey
                 </div>
                 <div class="product__prise">$5.50</div>
             </div>
-            <div class="product product_4">
+            <div class="product product_coffee product_4">
                 <div class="product__image product__image_4"></div>
                 <div class="product__title">Ice cappuccino</div>
                 <div class="product__description">Cappuccino with soft thick foam in summer version with ice
                 </div>
                 <div class="product__prise">$5.00</div>
             </div>
-            <div class="product product_5">
+            <div class="product product_coffee product_5">
                 <div class="product__image product__image_5"></div>
                 <div class="product__title">Espresso</div>
                 <div class="product__description">Classic black coffee
                 </div>
                 <div class="product__prise">$4.50</div>
             </div>
-            <div class="product product_6">
+            <div class="product product_coffee product_6">
                 <div class="product__image product__image_6"></div>
                 <div class="product__title">Latte</div>
                 <div class="product__description">Espresso coffee with the addition of steamed milk and dense milk foam
                 </div>
                 <div class="product__prise">$5.50</div>
             </div>
-            <div class="product product_7">
+            <div class="product product_coffee product_7">
                 <div class="product__image product__image_7"></div>
 
                 <div class="product__title">Latte macchiato</div>
@@ -117,10 +122,99 @@
                 </div>
                 <div class="product__prise">$5.50</div>
             </div>
-            <div class="product product_8">
+            <div class="product product_coffee product_8">
                 <div class="product__image product__image_8"></div>
                 <div class="product__title">Coffee with cognac</div>
                 <div class="product__description">Fragrant black coffee with cognac and whipped cream
+                </div>
+                <div class="product__prise">$6.50</div>
+            </div>
+            <div class="product product_tee product_9">
+                <div class="product__image product__image_9"></div>
+                <div class="product__title">Moroccan</div>
+                <div class="product__description">Fragrant black tea with the addition of tangerine, cinnamon, honey,
+                    lemon and mint
+                </div>
+                <div class="product__prise">$4.50</div>
+            </div>
+            <div class="product product_tee product_10">
+                <div class="product__image product__image_10"></div>
+                <div class="product__title">Ginger</div>
+                <div class="product__description">Original black tea with fresh ginger, lemon and honey
+                </div>
+                <div class="product__prise">$5.00</div>
+            </div>
+            <div class="product product_tee product_11">
+                <div class="product__image product__image_11"></div>
+                <div class="product__title">Cranberry</div>
+                <div class="product__description">Invigorating black tea with cranberry and honey
+                </div>
+                <div class="product__prise">$5.00</div>
+            </div>
+            <div class="product product_tee product_12">
+                <div class="product__image product__image_12"></div>
+                <div class="product__title">Sea buckthorn</div>
+                <div class="product__description">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon
+                </div>
+                <div class="product__prise">$5.50</div>
+            </div>
+            <div class="product product_dessert product_13">
+                <div class="product__image product__image_13"></div>
+                <div class="product__title">Marble cheesecake</div>
+                <div class="product__description">Philadelphia cheese with lemon zest on a light sponge cake and red
+                    currant jam
+                </div>
+                <div class="product__prise">$3.50</div>
+            </div>
+            <div class="product product_dessert product_14">
+                <div class="product__image product__image_14"></div>
+                <div class="product__title">Red velvet</div>
+                <div class="product__description">Layer cake with cream cheese frosting
+                </div>
+                <div class="product__prise">$4.00</div>
+            </div>
+            <div class="product product_dessert product_15">
+                <div class="product__image product__image_15"></div>
+                <div class="product__title">Cheesecakes</div>
+                <div class="product__description">Soft cottage cheese pancakes with sour cream and fresh berries and
+                    sprinkled with powdered sugar
+                </div>
+                <div class="product__prise">$4.50</div>
+            </div>
+            <div class="product product_dessert product_16">
+                <div class="product__image product__image_16"></div>
+                <div class="product__title">Creme brulee</div>
+                <div class="product__description">Delicate creamy dessert in a caramel basket with wild berries
+                </div>
+                <div class="product__prise">$4.00</div>
+            </div>
+            <div class="product product_dessert product_17">
+                <div class="product__image product__image_17"></div>
+                <div class="product__title">Pancakes</div>
+                <div class="product__description">Tender pancakes with strawberry jam and fresh strawberries
+                </div>
+                <div class="product__prise">$4.50</div>
+            </div>
+            <div class="product product_dessert product_18">
+                <div class="product__image product__image_18"></div>
+                <div class="product__title">Honey cake</div>
+                <div class="product__description">Classic honey cake with delicate custard
+                </div>
+                <div class="product__prise">$4.50</div>
+            </div>
+            <div class="product product_dessert product_19">
+                <div class="product__image product__image_19"></div>
+
+                <div class="product__title">Chocolate cake</div>
+                <div class="product__description">Cake with hot chocolate filling and nuts with dried apricots
+                </div>
+                <div class="product__prise">$5.50</div>
+            </div>
+            <div class="product product_dessert product_20">
+                <div class="product__image product__image_20"></div>
+                <div class="product__title">Black forest</div>
+                <div class="product__description">A combination of thin sponge cake with cherry jam and light chocolate
+                    mousse
                 </div>
                 <div class="product__prise">$6.50</div>
             </div>
@@ -133,7 +227,63 @@
                 <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round"
                       stroke-linejoin="round"/>
             </svg>
-
+        </div>
+        <div class="modal-window">
+            <div class="modal-window__fon">
+                <div class="modal-window__block">
+                    <div class="modal-window__img"></div>
+                    <div class="modal-window__info">
+                        <div class="modal-window__title"></div>
+                        <div class="modal-window__description"></div>
+                        <div class="modal-window-size-count">
+                            <div class="modal-window-size__title">Size</div>
+                            <div class="modal-window-size__buttons-count">
+                                <div class="modal-window-size__button modal-window-size__button_active">
+                                    <div class="modal-window-size__button__image ">S</div>
+                                    <p class="modal-window-size__button__text">200 ml</p>
+                                </div>
+                                <div class="modal-window-size__button">
+                                    <div class="modal-window-size__button__image">M</div>
+                                    <p class="modal-window-size__button__text">300 ml</p>
+                                </div>
+                                <div class="modal-window-size__button">
+                                    <div class="modal-window-size__button__image">L</div>
+                                    <p class="modal-window-size__button__text">400 ml</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-window-additives-count">
+                            <div class="modal-window-additives__title">Additives</div>
+                            <div class="modal-window-additives__buttons-count">
+                                <div class="modal-window-additives__button">
+                                    <div class="modal-window-additives__button__image">1</div>
+                                    <p class="modal-window-additives__button__text">Sugar</p>
+                                </div>
+                                <div class="modal-window-additives__button">
+                                    <div class="modal-window-additives__button__image">2</div>
+                                    <p class="modal-window-additives__button__text">Cinnamon</p>
+                                </div>
+                                <div class="modal-window-additives__button">
+                                    <div class="modal-window-additives__button__image">3</div>
+                                    <p class="modal-window-additives__button__text">Syrup</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-window__total-count">
+                            <div class="modal-window__total-title">Total:</div>
+                            <div class="modal-window__total-sum"></div>
+                        </div>
+                        <div class="modal-window__message-count">
+                            <div class="modal-window__message-logo">i</div>
+                            <div class="modal-window__message-info">The cost is not final. Download our mobile app to
+                                see the final price and place your order. Earn loyalty points and enjoy your favorite
+                                coffee with up to 20% discount.
+                            </div>
+                        </div>
+                        <div class="modal-window__close-button">Close</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -196,5 +346,6 @@
         </div>
     </footer>
 </div>
+<script type="module" src="menuPage.js"></script>
 </body>
 </html>

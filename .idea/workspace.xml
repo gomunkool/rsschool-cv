@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f520bcbb-afd7-49bc-95d7-ee218cad1ccc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee-house/MenuPage/menuPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/MenuPage/menuPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee-house/MenuPage/menuPageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/MenuPage/menuPageStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee-house/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee-house/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee-house/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-house/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +28,19 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/rsschool-cv/coffee-house/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/rsschool-cv/data&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\rsschool-cv\data" />
       <recent name="F:\rsschool-cv\coffee-house\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\rsschool-cv\coffee-house\MenuPage" />
+      <recent name="F:\rsschool-cv\coffee-house" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,7 +64,14 @@
       <workItem from="1703019789916" duration="4694000" />
       <workItem from="1703105943338" duration="3859000" />
       <workItem from="1703339221978" duration="6673000" />
-      <workItem from="1703420389326" duration="4349000" />
+      <workItem from="1703420389326" duration="4951000" />
+      <workItem from="1703698735555" duration="8810000" />
+      <workItem from="1703947692491" duration="6480000" />
+      <workItem from="1703958053026" duration="1981000" />
+      <workItem from="1704793644232" duration="38320000" />
+      <workItem from="1705143139194" duration="24823000" />
+      <workItem from="1705254515747" duration="3437000" />
+      <workItem from="1705759495022" duration="3864000" />
     </task>
     <servers />
   </component>
