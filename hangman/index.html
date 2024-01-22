@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Hangman</title>
+</head>
+<body id="body">
+<div class="count">
+    <div class="content">
+        <div class="content__left">
+            <div class="title">Hangman game</div>
+            <div class="hanging-count">
+                <div class="human-count">
+                    <div class="human__head">
+                        <img class="human__img" src="images/head.png" alt="head">
+                    </div>
+                    <div class="human-center-count">
+                        <div class="human-count_img human__hand-left">
+                            <img class="human__img" src="images/hand-one.png" alt="hand">
+                        </div>
+                        <div class="human-count_img human__body">
+                            <img class="human__img" src="images/body.png" alt="body">
+                        </div>
+                        <div class="human-count_img human__hand-right">
+                            <img class="human__img" src="images/hand-two.png" alt="hand">
+                        </div>
+                    </div>
+                    <div class="human-bottom-count">
+                        <div class="human-count_img human__leg-left">
+                            <img class="human__img" src="images/leg-one.png" alt="leg">
+                        </div>
+                        <div class="human-count_img human__leg-right">
+                            <img class="human__img" src="images/leg-two.png" alt="leg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            <div class="question">What is the primary organ responsible for pumping blood throughout the human body?
+            </div>
+            <div class="word-count">
+                <div class="word-letter word__1">_</div>
+                <div class="word-letter word__2">_</div>
+                <div class="word-letter word__3">_</div>
+                <div class="word-letter word__4">_</div>
+                <div class="word-letter word__5">_</div>
+            </div>
+            <div class="try-count">
+                <div class="try-description">Incorrect guesses:</div>
+                <div class="try">0/6</div>
+            </div>
+            <div class="keyboard-count">
+                <div class="keyboard__row keyboard__top">
+                    <div class="keyboard__letter">A</div>
+                    <div class="keyboard__letter">B</div>
+                    <div class="keyboard__letter">C</div>
+                    <div class="keyboard__letter">D</div>
+                    <div class="keyboard__letter">E</div>
+                    <div class="keyboard__letter">F</div>
+                    <div class="keyboard__letter">G</div>
+                    <div class="keyboard__letter">H</div>
+                    <div class="keyboard__letter">I</div>
+                </div>
+                <div class="keyboard__row keyboard__center">
+                    <div class="keyboard__letter">J</div>
+                    <div class="keyboard__letter">K</div>
+                    <div class="keyboard__letter">L</div>
+                    <div class="keyboard__letter">M</div>
+                    <div class="keyboard__letter">N</div>
+                    <div class="keyboard__letter">O</div>
+                    <div class="keyboard__letter">P</div>
+                    <div class="keyboard__letter">Q</div>
+                    <div class="keyboard__letter">R</div>
+                </div>
+                <div class="keyboard__row keyboard__bottom">
+                    <div class="keyboard__letter">S</div>
+                    <div class="keyboard__letter">T</div>
+                    <div class="keyboard__letter">U</div>
+                    <div class="keyboard__letter">V</div>
+                    <div class="keyboard__letter">W</div>
+                    <div class="keyboard__letter">X</div>
+                    <div class="keyboard__letter">Y</div>
+                    <div class="keyboard__letter keyboard__letter_block">Z</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./index.js" type="module"></script>
+</body>
+</html>
