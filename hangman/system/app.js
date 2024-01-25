@@ -8,6 +8,6 @@ export class Application {
 
   init() {
     this.main = new Main(this);
-    // this.main.render();
+    this.main.render();
   }
 }

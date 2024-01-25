@@ -129,6 +129,18 @@ h6 {
     display: flex;
 }
 
+.human__hand-left {
+    order: 1;
+}
+
+.human__body {
+    order: 2;
+}
+
+.human__hand-right {
+    order: 3;
+}
+
 .human-bottom-count {
     display: flex;
 }
@@ -208,12 +220,64 @@ h6 {
 }
 
 .keyboard__letter_block {
-    background-color: #800000;
-    cursor: none;
+    background-color: #CCCCCC;
+    pointer-events: none;
 }
 
 .keyboard__letter_block:hover {
     opacity: 1;
+}
+
+.modal-window-count {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    text-align: center;
+    padding: 100px 0;
+    display: none;
+}
+
+.modal-window__result {
+    font-weight: 700;
+    font-size: 100px;
+    margin: 0 0 100px 0;
+    color: #800000;
+}
+
+.modal-window__answer {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0 0 100px 0;
+    color: #008080;
+}
+
+.modal-window-count_active {
+    display: block;
+}
+
+.modal-window__button-try {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: #FFFFFF 2px solid;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-window__button-try:hover {
+    background-color: #008080;
+    opacity: 0.7;
+
 }
 
 @media (max-width: 1200px) {
@@ -258,26 +322,33 @@ h6 {
         padding: 10px;
         margin: 20px auto;
     }
-    .title{
+
+    .title {
         font-size: 32px;
     }
+
     .hanging-count {
         width: 100px;
         height: 150px;
     }
+
     .human-count {
         top: -70px;
         right: -30px;
         transform: scale(0.3, 0.3);
     }
-    .content__right{
-        margin:  20px 0 0 50px;
+
+
+    .content__right {
+        margin: 20px 0 0 50px;
     }
-    .question{
+
+    .question {
         font-size: 18px;
         font-weight: 400;
         margin: 0 0 2px 0;
     }
+
     .word-count {
         font-size: 40px;
     }
@@ -285,6 +356,8 @@ h6 {
     .word-letter {
         margin: 0 3px;
     }
+
+
     .try-count {
         margin: 30px 0;
     }
@@ -297,6 +370,7 @@ h6 {
     .try {
         font-size: 24px;
     }
+
     .keyboard__letter {
         width: 20px;
         height: 20px;
@@ -306,10 +380,22 @@ h6 {
 }
 
 @media (max-width: 400px) {
-    .title{
+    .title {
         font-size: 24px;
     }
-    .content__right{
-        margin:  20px 0 0 20px;
+
+    .content__right {
+        margin: 20px 0 0 20px;
     }
+}
+
+.human__img_disabled {
+    visibility: hidden;
+}
+
+.word-letter_spase {
+    margin: 0 5px;
+    width: 15px;
+    height: 100%;
+    display: block;
 }
