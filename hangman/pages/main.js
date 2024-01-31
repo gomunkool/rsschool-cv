@@ -200,9 +200,11 @@ export class Main {
         </div>
     </div>
     <div class="modal-window-count">
-     <div class="modal-window__result"></div>
+    <div class="modal-window-board">
+    <div class="modal-window__result"></div>
      <div class="modal-window__answer"></div>
      <div class="modal-window__button-try">TRY AGAIN</div>
+</div>
 </div>
 </div>
     `;

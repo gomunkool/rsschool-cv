@@ -150,6 +150,7 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .question {
@@ -163,7 +164,9 @@ h6 {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    margin: 0 0 90px 0;
 }
 
 .word-letter {
@@ -171,7 +174,7 @@ h6 {
 }
 
 .try-count {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .try-description {
@@ -235,9 +238,19 @@ h6 {
     right: 0;
     left: 0;
     background-color: #CCCCCC;
-    text-align: center;
-    padding: 100px 0;
     display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(204, 204, 204, 0.4);
+}
+
+.modal-window-board {
+    text-align: center;
+    border-radius: 20px;
+    border: 2px #000000 solid;
+    max-width: 400px;
+    padding: 50px 50px;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .modal-window__result {
@@ -255,7 +268,7 @@ h6 {
 }
 
 .modal-window-count_active {
-    display: block;
+    display: flex;
 }
 
 .modal-window__button-try {
@@ -265,11 +278,11 @@ h6 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border: #FFFFFF 2px solid;
+    border: #000000 2px solid;
     border-radius: 15px;
     font-weight: 400;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -318,6 +331,15 @@ h6 {
 
 
 @media (max-width: 600px) {
+    .content {
+        display: block;
+    }
+
+    .content__left {
+        max-width: 100%;
+        display: flex
+    }
+
     .count {
         padding: 10px;
         margin: 20px auto;
