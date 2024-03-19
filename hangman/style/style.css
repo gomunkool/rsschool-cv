@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.count {
+    max-width: 1440px;
+    padding: 40px;
+    margin: 20px auto;
+    border: #000000 2px solid;
+}
+
+.content {
+    display: flex;
+}
+
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #008080;
+}
+
+.content__left {
+    max-width: 30%;
+}
+
+.hanging-count {
+    background: url("../images/gallows.png") 0 0 no-repeat;
+    width: 400px;
+    height: 500px;
+    margin: 80px 0;
+}
+
+.human-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    right: -102px;
+}
+
+.human-center-count {
+    display: flex;
+}
+
+.human__hand-left {
+    order: 1;
+}
+
+.human__body {
+    order: 2;
+}
+
+.human__hand-right {
+    order: 3;
+}
+
+.human-bottom-count {
+    display: flex;
+}
+
+.content__right {
+    margin: 40px 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+.word-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    flex-wrap: wrap;
+    margin: 0 0 90px 0;
+}
+
+.word-letter {
+    margin: 0 5px;
+}
+
+.try-count {
+    margin: 20px 0;
+}
+
+.try-description {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 10px 0 0;
+}
+
+.try {
+    display: inline-block;
+    color: #800000;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.keyboard-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyboard__row {
+    display: flex;
+    align-items: center;
+}
+
+.keyboard__letter {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #008080;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 34px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.keyboard__letter:hover {
+    opacity: 0.7;
+}
+
+.keyboard__letter_block {
+    background-color: #CCCCCC;
+    pointer-events: none;
+}
+
+.keyboard__letter_block:hover {
+    opacity: 1;
+}
+
+.modal-window-count {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(204, 204, 204, 0.4);
+}
+
+.modal-window-board {
+    text-align: center;
+    border-radius: 20px;
+    border: 2px #000000 solid;
+    max-width: 400px;
+    padding: 50px 50px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.modal-window__result {
+    font-weight: 700;
+    font-size: 100px;
+    margin: 0 0 100px 0;
+    color: #800000;
+}
+
+.modal-window__answer {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0 0 100px 0;
+    color: #008080;
+}
+
+.modal-window-count_active {
+    display: flex;
+}
+
+.modal-window__button-try {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: #000000 2px solid;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-window__button-try:hover {
+    background-color: #008080;
+    opacity: 0.7;
+
+}
+
+@media (max-width: 1200px) {
+    .keyboard__letter {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hanging-count {
+        width: 200px;
+        height: 300px;
+        background: url("../images/gallows.png") 0 0/contain no-repeat;
+    }
+
+    .human-count {
+        top: 15px;
+        right: -56px;
+        transform: scale(0.6, 0.6);
+    }
+
+    .keyboard__letter {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .keyboard__letter {
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+        margin: 2px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .content {
+        display: block;
+    }
+
+    .content__left {
+        max-width: 100%;
+        display: flex
+    }
+
+    .count {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .hanging-count {
+        width: 100px;
+        height: 150px;
+    }
+
+    .human-count {
+        top: -70px;
+        right: -30px;
+        transform: scale(0.3, 0.3);
+    }
+
+
+    .content__right {
+        margin: 20px 0 0 50px;
+    }
+
+    .question {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 2px 0;
+    }
+
+    .word-count {
+        font-size: 40px;
+    }
+
+    .word-letter {
+        margin: 0 3px;
+    }
+
+
+    .try-count {
+        margin: 30px 0;
+    }
+
+    .try-description {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .try {
+        font-size: 24px;
+    }
+
+    .keyboard__letter {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .content__right {
+        margin: 20px 0 0 20px;
+    }
+}
+
+.human__img_disabled {
+    visibility: hidden;
+}
+
+.word-letter_spase {
+    margin: 0 5px;
+    width: 15px;
+    height: 100%;
+    display: block;
+}
